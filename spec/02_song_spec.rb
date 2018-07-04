@@ -1,5 +1,5 @@
 require "spec_helper"
-
+require 'pry'
 describe "Song" do
 
   describe "#new" do
@@ -27,7 +27,7 @@ describe "Song" do
       jay_z = Artist.new("Jay-Z")
       rap = Genre.new("rap")
       ninety_nine_problems = Song.new("99 Problems", jay_z, rap)
-
+      binding.pry
       expect(ninety_nine_problems.genre).to eq(rap)
     end
   end
