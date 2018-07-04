@@ -12,6 +12,7 @@ class Artist
     @songs << song
     @genres << song.genre
     genre.songs << song
+    genre.artists << self
     return song
   end
 
