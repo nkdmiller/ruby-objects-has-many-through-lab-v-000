@@ -5,5 +5,6 @@ class Genre
     @name = name
     @songs = []
     @artists = []
+    @@all << self
   end
 end
