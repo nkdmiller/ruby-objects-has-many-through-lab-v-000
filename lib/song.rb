@@ -7,4 +7,7 @@ class Song
     @artist = artist
     @@all << song
   end
+  def self.all
+    return @@all
+  end
 end
