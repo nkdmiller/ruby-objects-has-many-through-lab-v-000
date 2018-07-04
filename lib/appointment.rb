@@ -11,4 +11,7 @@ class Appointment
     patient.appointments << self
     @@all << self
   end
+  def self.all
+    @@all << self
+  end
 end
