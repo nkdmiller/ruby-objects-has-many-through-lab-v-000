@@ -10,4 +10,7 @@ class Doctor
   def new_appointment(date, patient)
     appointment = Appointment.new(date, patient, self)
   end
+  def self.all
+    return @@all
+  end
 end
