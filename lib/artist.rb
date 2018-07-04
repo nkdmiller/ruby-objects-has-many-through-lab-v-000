@@ -12,5 +12,8 @@ class Artist
     @songs << song
     @genres << song.genre
   end
+
+  def self.all
+    return @@all
+  end
 end
-  
